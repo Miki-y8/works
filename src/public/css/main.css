@@ -1,0 +1,57 @@
+*{
+    font-family: "Zen Kurenaido",
+            sans-serif;
+    font-weight: 300;
+    color: #8B7969;
+}
+
+.body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #F9F9F9;
+}
+
+.header {
+    border-bottom: #D9C6B5 1px solid;
+}
+
+
+.header__inner {
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav {
+    margin: 0px 20px 0px;
+}
+
+.header__list {
+    display: flex; 
+}
+
+.header__list-item {
+    width: 10vw;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.nav__item {
+    text-decoration: none;
+    background-image: linear-gradient(90deg,#e37515,#b3a396);
+        /* 線の色 */
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        /* 線の起点を左・下に設定 */
+        background-size: 0 2px;
+        /* 線の横幅を0、縦幅を1pxに */
+        transition: background-size 0.8s;
+        /* 線を伸ばすアニメーション実行時間を指定 */
+}
+
+.nav__item:hover {
+    color: #dd8436;
+    transition: color 0.3s ease 0s;
+    background-size: 100% 2px;
+}
