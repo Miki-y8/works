@@ -55,3 +55,18 @@
     transition: color 0.3s ease 0s;
     background-size: 100% 2px;
 }
+
+.footer {
+    height: 90px;
+    background-color: #8B7969;
+}
+
+.sns-item {
+    display: flex;
+    justify-content: center;
+}
+
+.Instagram-image {
+    width: 30px;
+    margin: 30px;
+}

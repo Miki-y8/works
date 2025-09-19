@@ -6,7 +6,8 @@
     <title>Miki Yukino portfoliosite
     </title>
     <link rel="stylesheet" href="{{ asset('css/sanitize.css') }}" />
-    <link rel="stylesheet" href="{{ asset('css/main.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/header.css') }}" />
+    @yield('css')
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
@@ -27,5 +28,17 @@
             </nav>
         </div>
     </header>
+
+    <main>
+        @yield('content')
+    </main>
+
+    <footer class="footer">
+        <div class="sns-item">
+            <a href="">
+            <img src="{{ asset('/images/Instagram_Glyph_Gradient.png') }}"  alt="Instagram" class="Instagram-image"/>
+            </a>
+        </div>
+    </footer>
 </body>
 </html>
